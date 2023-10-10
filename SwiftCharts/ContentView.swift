@@ -1,21 +1,45 @@
 import SwiftUI
 
+//  https://github.com/jordibruin/Swift-Charts-Examples
 
 
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            List {
-                
-                NavigationLink("Static Chart View") {
-                    StaticChartView()
+
+                    VStack {
+                    
+                        List {
+                            Section(header: Text("Chart by Type")) {
+                                NavigationLink("Bar Charts") {
+                                    BarChartsView()
+                                }
+                                
+                                NavigationLink("Static Chart View") {
+                                    StaticChartView()
+                                }
+                                
+                                NavigationLink("Dynamic Chart View") {
+                                    DynamicChartView()
+                                }
+                                
+                                NavigationLink("Weather Data View") {
+                                    WeatherDataView()
+                                }
+                            }
+                        }
+//                        .listStyle(GroupedListStyle())
+                        
+                        List {
+                            Section(header: Text("Charts by Style")) {
+                                                        Text("Item A")
+                                                        Text("Item B")
+                                                        Text("Item C")
+                                                    }
+                        }
+//                        .listStyle(GroupedListStyle())
                 }
-                
-                NavigationLink("Dynamic Chart View") {
-                    DynamicChartView()
-                }
-                
-            }.navigationTitle("Swift Charts")
+                    .navigationTitle("Swift Charts")
         }
     }
 }

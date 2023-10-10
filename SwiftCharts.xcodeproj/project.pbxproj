@@ -14,6 +14,10 @@
 		14D247512AD4C5DD00B048DB /* StaticChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D247502AD4C5DD00B048DB /* StaticChartView.swift */; };
 		14D247532AD4CDB300B048DB /* DynamicChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D247522AD4CDB300B048DB /* DynamicChartView.swift */; };
 		14D247552AD4D4E400B048DB /* Turtle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D247542AD4D4E400B048DB /* Turtle.swift */; };
+		14D247572AD4DA1800B048DB /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D247562AD4DA1800B048DB /* WeatherData.swift */; };
+		14D247592AD4DC3500B048DB /* WeatherDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D247582AD4DC3500B048DB /* WeatherDataView.swift */; };
+		14FA170B2AD60484009505B1 /* ToyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FA170A2AD60484009505B1 /* ToyShape.swift */; };
+		14FA170D2AD6050E009505B1 /* BarChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FA170C2AD6050E009505B1 /* BarChartsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		14D247502AD4C5DD00B048DB /* StaticChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticChartView.swift; sourceTree = "<group>"; };
 		14D247522AD4CDB300B048DB /* DynamicChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicChartView.swift; sourceTree = "<group>"; };
 		14D247542AD4D4E400B048DB /* Turtle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turtle.swift; sourceTree = "<group>"; };
+		14D247562AD4DA1800B048DB /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		14D247582AD4DC3500B048DB /* WeatherDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataView.swift; sourceTree = "<group>"; };
+		14FA170A2AD60484009505B1 /* ToyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyShape.swift; sourceTree = "<group>"; };
+		14FA170C2AD6050E009505B1 /* BarChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,13 +65,15 @@
 		14D247412AD4C3AF00B048DB /* SwiftCharts */ = {
 			isa = PBXGroup;
 			children = (
+				14FA17092AD6046B009505B1 /* Model */,
 				14D247422AD4C3AF00B048DB /* SwiftChartsApp.swift */,
 				14D247442AD4C3AF00B048DB /* ContentView.swift */,
-				14D247462AD4C3B000B048DB /* Assets.xcassets */,
-				14D247482AD4C3B000B048DB /* Preview Content */,
 				14D247502AD4C5DD00B048DB /* StaticChartView.swift */,
 				14D247522AD4CDB300B048DB /* DynamicChartView.swift */,
-				14D247542AD4D4E400B048DB /* Turtle.swift */,
+				14D247582AD4DC3500B048DB /* WeatherDataView.swift */,
+				14D247462AD4C3B000B048DB /* Assets.xcassets */,
+				14D247482AD4C3B000B048DB /* Preview Content */,
+				14FA170C2AD6050E009505B1 /* BarChartsView.swift */,
 			);
 			path = SwiftCharts;
 			sourceTree = "<group>";
@@ -74,6 +84,16 @@
 				14D247492AD4C3B000B048DB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14FA17092AD6046B009505B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14D247562AD4DA1800B048DB /* WeatherData.swift */,
+				14D247542AD4D4E400B048DB /* Turtle.swift */,
+				14FA170A2AD60484009505B1 /* ToyShape.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,9 +167,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				14D247452AD4C3AF00B048DB /* ContentView.swift in Sources */,
+				14D247592AD4DC3500B048DB /* WeatherDataView.swift in Sources */,
 				14D247552AD4D4E400B048DB /* Turtle.swift in Sources */,
+				14FA170D2AD6050E009505B1 /* BarChartsView.swift in Sources */,
 				14D247432AD4C3AF00B048DB /* SwiftChartsApp.swift in Sources */,
 				14D247512AD4C5DD00B048DB /* StaticChartView.swift in Sources */,
+				14D247572AD4DA1800B048DB /* WeatherData.swift in Sources */,
+				14FA170B2AD60484009505B1 /* ToyShape.swift in Sources */,
 				14D247532AD4CDB300B048DB /* DynamicChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
