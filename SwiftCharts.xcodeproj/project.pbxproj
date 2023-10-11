@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		146335A62AD619CC00F9A8D9 /* PieChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146335A52AD619CC00F9A8D9 /* PieChartsView.swift */; };
 		146335A82AD61D0C00F9A8D9 /* Pancake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146335A72AD61D0C00F9A8D9 /* Pancake.swift */; };
+		146335AC2AD63BED00F9A8D9 /* DonutChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146335AB2AD63BED00F9A8D9 /* DonutChartView.swift */; };
+		146335AF2AD6CB4A00F9A8D9 /* GraphType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146335AE2AD6CB4A00F9A8D9 /* GraphType.swift */; };
+		146335B12AD6CBCA00F9A8D9 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146335B02AD6CBCA00F9A8D9 /* PieChartView.swift */; };
 		14D247432AD4C3AF00B048DB /* SwiftChartsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D247422AD4C3AF00B048DB /* SwiftChartsApp.swift */; };
 		14D247452AD4C3AF00B048DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D247442AD4C3AF00B048DB /* ContentView.swift */; };
 		14D247472AD4C3B000B048DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D247462AD4C3B000B048DB /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		146335A52AD619CC00F9A8D9 /* PieChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartsView.swift; sourceTree = "<group>"; };
 		146335A72AD61D0C00F9A8D9 /* Pancake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pancake.swift; sourceTree = "<group>"; };
+		146335AB2AD63BED00F9A8D9 /* DonutChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutChartView.swift; sourceTree = "<group>"; };
+		146335AE2AD6CB4A00F9A8D9 /* GraphType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphType.swift; sourceTree = "<group>"; };
+		146335B02AD6CBCA00F9A8D9 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		14D2473F2AD4C3AF00B048DB /* SwiftCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D247422AD4C3AF00B048DB /* SwiftChartsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChartsApp.swift; sourceTree = "<group>"; };
 		14D247442AD4C3AF00B048DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +85,8 @@
 				14D247482AD4C3B000B048DB /* Preview Content */,
 				14FA170C2AD6050E009505B1 /* BarChartsView.swift */,
 				146335A52AD619CC00F9A8D9 /* PieChartsView.swift */,
+				146335AB2AD63BED00F9A8D9 /* DonutChartView.swift */,
+				146335B02AD6CBCA00F9A8D9 /* PieChartView.swift */,
 			);
 			path = SwiftCharts;
 			sourceTree = "<group>";
@@ -98,6 +106,7 @@
 				14D247542AD4D4E400B048DB /* Turtle.swift */,
 				14FA170A2AD60484009505B1 /* ToyShape.swift */,
 				146335A72AD61D0C00F9A8D9 /* Pancake.swift */,
+				146335AE2AD6CB4A00F9A8D9 /* GraphType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,6 +121,7 @@
 				14D2473B2AD4C3AF00B048DB /* Sources */,
 				14D2473C2AD4C3AF00B048DB /* Frameworks */,
 				14D2473D2AD4C3AF00B048DB /* Resources */,
+				146335AD2AD6CA9900F9A8D9 /* SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -167,13 +177,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		146335AD2AD6CA9900F9A8D9 /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"/opt/homebrew/bin:$PATH\"\nif which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		14D2473B2AD4C3AF00B048DB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				146335B12AD6CBCA00F9A8D9 /* PieChartView.swift in Sources */,
 				14D247452AD4C3AF00B048DB /* ContentView.swift in Sources */,
 				146335A82AD61D0C00F9A8D9 /* Pancake.swift in Sources */,
+				146335AC2AD63BED00F9A8D9 /* DonutChartView.swift in Sources */,
 				14D247592AD4DC3500B048DB /* WeatherDataView.swift in Sources */,
 				14D247552AD4D4E400B048DB /* Turtle.swift in Sources */,
 				14FA170D2AD6050E009505B1 /* BarChartsView.swift in Sources */,
@@ -183,6 +216,7 @@
 				14D247572AD4DA1800B048DB /* WeatherData.swift in Sources */,
 				14FA170B2AD60484009505B1 /* ToyShape.swift in Sources */,
 				14D247532AD4CDB300B048DB /* DynamicChartView.swift in Sources */,
+				146335AF2AD6CB4A00F9A8D9 /* GraphType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

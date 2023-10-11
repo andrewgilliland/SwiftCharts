@@ -2,13 +2,12 @@
 //  Introduction to SwiftCharts: Creating Charts and Graphs in SwiftUI
 //  https://www.youtube.com/watch?v=mnH7YRmuVKw
 
-import SwiftUI
 import Charts
+import SwiftUI
 
 struct StaticChartView: View {
-    
     @State private var radIsShown = false
-    
+
     var body: some View {
         VStack {
             Chart {
@@ -19,23 +18,21 @@ struct StaticChartView: View {
                     .foregroundStyle(.red)
                 BarMark(x: .value("Name", "Don"), y: .value("Cool", 3))
                     .foregroundStyle(.indigo)
-                
+
                 if radIsShown {
-                    
-                RuleMark(y: .value("Average", 1.5))
-                    .foregroundStyle(.green)
-                    .annotation(position: .top) {
-                        Text("Rad!!!")
-                            .foregroundColor(.green)
-                            .fontWeight(.bold)
-                            .font(.title)
-                    }
+                    RuleMark(y: .value("Average", 1.5))
+                        .foregroundStyle(.green)
+                        .annotation(position: .top) {
+                            Text("Rad!!!")
+                                .foregroundColor(.green)
+                                .fontWeight(.bold)
+                                .font(.title)
+                        }
                 }
-                
             }
             .aspectRatio(1, contentMode: .fit)
             .padding()
-            
+
             Toggle(radIsShown ? "show rad" : "hide rad", isOn: $radIsShown.animation(.easeInOut(duration: 0.5)))
         }
     }

@@ -1,10 +1,10 @@
-import SwiftUI
 import Charts
+import SwiftUI
 
 struct WeatherDataView: View {
     @State private var day = "Mon"
     @State private var weatherData: [WeatherData] = WeatherData.defaultWeatherTypeOne
-    
+
     var body: some View {
         Text("Weather")
     }

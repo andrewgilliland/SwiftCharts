@@ -2,6 +2,9 @@ import SwiftUI
 
 //  https://github.com/jordibruin/Swift-Charts-Examples
 
+// https://www.youtube.com/watch?v=nu74-aRobSs - SwiftUI Interactive Charts - Pie/Donut Charts - iOS 17 - WWDC 2023
+// https://developer.apple.com/videos/play/wwdc2023/10037/ ios 17
+
 // 1. barchart
 // 2. linechart
 // 3. areachart
@@ -12,44 +15,40 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
+            VStack {
+                List {
+                    Section(header: Text("Chart by Type")) {
+                        NavigationLink("Bar Charts") {
+                            BarChartsView()
+                        }
 
-                    VStack {
-                    
-                        List {
-                            Section(header: Text("Chart by Type")) {
-                                NavigationLink("Bar Charts") {
-                                    BarChartsView()
-                                }
-                                
-                                NavigationLink("Pie Charts") {
-                                    PieChartsView()
-                                }
-                                
-                                NavigationLink("Static Chart View") {
-                                    StaticChartView()
-                                }
-                                
-                                NavigationLink("Dynamic Chart View") {
-                                    DynamicChartView()
-                                }
-                                
-                                NavigationLink("Weather Data View") {
-                                    WeatherDataView()
-                                }
-                            }
+                        NavigationLink("Pie Charts") {
+                            PieChartsView()
                         }
-//                        .listStyle(GroupedListStyle())
-                        
-                        List {
-                            Section(header: Text("Charts by Style")) {
-                                                        Text("Item A")
-                                                        Text("Item B")
-                                                        Text("Item C")
-                                                    }
-                        }
-//                        .listStyle(GroupedListStyle())
+
+//                                NavigationLink("Static Chart View") {
+//                                    StaticChartView()
+//                                }
+
+//                                NavigationLink("Dynamic Chart View") {
+//                                    DynamicChartView()
+//                                }
+
+//                                NavigationLink("Weather Data View") {
+//                                    WeatherDataView()
+//                                }
+                    }
                 }
-                    .navigationTitle("Swift Charts")
+
+//                        List {
+//                            Section(header: Text("Charts by Style")) {
+//                                                        Text("Item A")
+//                                                        Text("Item B")
+//                                                        Text("Item C")
+//                                                    }
+//                        }
+            }
+            .navigationTitle("Swift Charts")
         }
     }
 }

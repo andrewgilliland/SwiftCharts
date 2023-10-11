@@ -5,6 +5,6 @@ struct Turtle: Identifiable, Equatable {
     let cool: Double
     let color: Color
     let height: Double
-    
-    var id: String { return name}
+
+    var id: String { return name }
 }
