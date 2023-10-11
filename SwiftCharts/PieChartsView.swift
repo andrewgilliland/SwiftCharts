@@ -72,7 +72,7 @@ struct PieChartsView: View {
                 .padding()
                 .chartBackground { chartProxy in
                     GeometryReader { geometry in
-                        let frame = geometry[chartProxy.plotFrame]
+                        let frame = geometry[chartProxy.plotAreaFrame]
                         VStack {
                             Text("Most Sold Style")
                                 .fontWeight(.light)
