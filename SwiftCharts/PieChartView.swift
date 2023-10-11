@@ -2,6 +2,7 @@ import Charts
 import SwiftUI
 
 struct PieChartView: View {
+    @Binding var graphType: GraphType
     @State private var cornerRadius: CGFloat = 2.0
     @State private var angularInset = 1.0
     @State private var chartLegendSpacing: CGFloat = 25.0
@@ -38,6 +39,7 @@ struct PieChartView: View {
             .chartXAxis(.hidden)
             .aspectRatio(contentMode: .fit)
             .padding()
+            .animation(.snappy, value: graphType)
 
             Stepper("Corner Radius: \(cornerRadius)", value: $cornerRadius, in: 0 ... 50)
                 .padding(.horizontal)
@@ -46,20 +48,29 @@ struct PieChartView: View {
             Stepper("Chart Legend Spacing: \(chartLegendSpacing)", value: $chartLegendSpacing, in: 0 ... 50, step: 0.5)
                 .padding(.horizontal)
 
-//            Picker("Chart Legend Position", selection: $chartLegendPosition) {
-//                Text("Top")
-//                    .tag(AnnotationPosition.top)
-//
-//                Text("Bottom")
-//                    .tag(AnnotationPosition.bottom)
-//
-//                Text("Trailing")
-//                    .tag(AnnotationPosition.trailing)
-//
-//                Text("Leading")
-//                    .tag(AnnotationPosition.leading)
-//            }
+            Text("Chart Legend Position")
+                .padding(.top)
+            Picker("", selection: $chartLegendPosition) {
+                Text("Top")
+                    .tag(AnnotationPosition.top)
 
+                Text("Bottom")
+                    .tag(AnnotationPosition.bottom)
+
+                Text("Trailing")
+                    .tag(AnnotationPosition.trailing)
+
+                Text("Leading")
+                    .tag(AnnotationPosition.leading)
+
+                Text("Overlay")
+                    .tag(AnnotationPosition.overlay)
+            }
+            .pickerStyle(.segmented)
+            .padding(.horizontal)
+
+            Text("Chart Legend Aligment")
+                .padding(.top)
             Picker("Chart Legend Alignment", selection: $chartLegendAlignment) {
                 Text("Center")
                     .tag(Alignment.center)
@@ -74,15 +85,10 @@ struct PieChartView: View {
                     .tag(Alignment.leading)
             }
             .pickerStyle(.segmented)
-            .labelsHidden()
-            .padding()
+            .padding(.horizontal)
         }
         .padding()
     }
-}
-
-#Preview {
-    PieChartView()
 }
 
 extension Alignment: Hashable {
@@ -129,5 +135,32 @@ extension Alignment: Hashable {
     }
 }
 
+extension AnnotationPosition: Hashable {
+    public func hash(into hasher: inout Hasher) {
+        switch self {
+        case .overlay:
+            hasher.combine("overlay")
+        case .leading:
+            hasher.combine("leading")
+        case .trailing:
+            hasher.combine("trailing")
 
+        case .top:
+            hasher.combine("top")
+        case .topLeading:
+            hasher.combine("topLeading")
+        case .topTrailing:
+            hasher.combine("topTrailing")
 
+        case .bottom:
+            hasher.combine("bottom")
+        case .bottomLeading:
+            hasher.combine("bottomLeading")
+        case .bottomTrailing:
+            hasher.combine("bottomTrailing")
+
+        default:
+            hasher.combine("default")
+        }
+    }
+}

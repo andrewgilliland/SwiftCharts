@@ -19,7 +19,7 @@ struct PieChartsView: View {
                 .padding()
 
                 if graphType == .pie {
-                    PieChartView()
+                    PieChartView(graphType: $graphType)
                 }
 
                 if graphType == .donut {
