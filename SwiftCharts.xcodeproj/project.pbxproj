@@ -21,6 +21,7 @@
 		14D247552AD4D4E400B048DB /* Turtle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D247542AD4D4E400B048DB /* Turtle.swift */; };
 		14D247572AD4DA1800B048DB /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D247562AD4DA1800B048DB /* WeatherData.swift */; };
 		14D247592AD4DC3500B048DB /* WeatherDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D247582AD4DC3500B048DB /* WeatherDataView.swift */; };
+		14F4A1292AD75283000C6EC6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4A1282AD75283000C6EC6 /* Extensions.swift */; };
 		14FA170B2AD60484009505B1 /* ToyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FA170A2AD60484009505B1 /* ToyShape.swift */; };
 		14FA170D2AD6050E009505B1 /* BarChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FA170C2AD6050E009505B1 /* BarChartsView.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,7 @@
 		14D247542AD4D4E400B048DB /* Turtle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turtle.swift; sourceTree = "<group>"; };
 		14D247562AD4DA1800B048DB /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		14D247582AD4DC3500B048DB /* WeatherDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataView.swift; sourceTree = "<group>"; };
+		14F4A1282AD75283000C6EC6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		14FA170A2AD60484009505B1 /* ToyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyShape.swift; sourceTree = "<group>"; };
 		14FA170C2AD6050E009505B1 /* BarChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 				14FA170A2AD60484009505B1 /* ToyShape.swift */,
 				146335A72AD61D0C00F9A8D9 /* Pancake.swift */,
 				146335AE2AD6CB4A00F9A8D9 /* GraphType.swift */,
+				14F4A1282AD75283000C6EC6 /* Extensions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				146335A62AD619CC00F9A8D9 /* PieChartsView.swift in Sources */,
 				14D247432AD4C3AF00B048DB /* SwiftChartsApp.swift in Sources */,
 				14D247512AD4C5DD00B048DB /* StaticChartView.swift in Sources */,
+				14F4A1292AD75283000C6EC6 /* Extensions.swift in Sources */,
 				14D247572AD4DA1800B048DB /* WeatherData.swift in Sources */,
 				14FA170B2AD60484009505B1 /* ToyShape.swift in Sources */,
 				14D247532AD4CDB300B048DB /* DynamicChartView.swift in Sources */,
