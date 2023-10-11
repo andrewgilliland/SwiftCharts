@@ -5,6 +5,8 @@ struct DonutChartView: View {
     @State private var cornerRadius = 2
     @State private var angularInset = 1.0
     @State private var chartLegendSpacing: CGFloat = 25.0
+    @State private var chartLegendPosition: AnnotationPosition = .top
+    @State private var chartLegendAlignment: Alignment = .center
 
     var body: some View {
         VStack {
@@ -20,7 +22,7 @@ struct DonutChartView: View {
             .chartXAxis(.hidden)
             .aspectRatio(contentMode: .fit)
             .padding()
-            .chartLegend(position: .top, alignment: .center, spacing: chartLegendSpacing)
+            .chartLegend(position: chartLegendPosition, alignment: chartLegendAlignment, spacing: chartLegendSpacing)
             .chartBackground { chartProxy in
                 GeometryReader { geometry in
                     let frame = geometry[chartProxy.plotAreaFrame]
@@ -44,6 +46,9 @@ struct DonutChartView: View {
                 .padding(.horizontal)
             Stepper("Chart Legend Spacing: \(chartLegendSpacing)", value: $chartLegendSpacing, in: 0 ... 50, step: 0.5)
                 .padding(.horizontal)
+
+            ChartLegendPositionPicker(chartLegendPosition: $chartLegendPosition)
+            ChartLegendAlignmentPicker(chartLegendAlignment: $chartLegendAlignment)
         }
         .padding()
     }

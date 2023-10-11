@@ -22,6 +22,8 @@
 		14D247572AD4DA1800B048DB /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D247562AD4DA1800B048DB /* WeatherData.swift */; };
 		14D247592AD4DC3500B048DB /* WeatherDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D247582AD4DC3500B048DB /* WeatherDataView.swift */; };
 		14F4A1292AD75283000C6EC6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4A1282AD75283000C6EC6 /* Extensions.swift */; };
+		14F4A12B2AD75334000C6EC6 /* ChartLegendAlignmentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4A12A2AD75334000C6EC6 /* ChartLegendAlignmentPicker.swift */; };
+		14F4A12D2AD753C4000C6EC6 /* ChartLegendPositionPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4A12C2AD753C4000C6EC6 /* ChartLegendPositionPicker.swift */; };
 		14FA170B2AD60484009505B1 /* ToyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FA170A2AD60484009505B1 /* ToyShape.swift */; };
 		14FA170D2AD6050E009505B1 /* BarChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FA170C2AD6050E009505B1 /* BarChartsView.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,8 @@
 		14D247562AD4DA1800B048DB /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		14D247582AD4DC3500B048DB /* WeatherDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataView.swift; sourceTree = "<group>"; };
 		14F4A1282AD75283000C6EC6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		14F4A12A2AD75334000C6EC6 /* ChartLegendAlignmentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLegendAlignmentPicker.swift; sourceTree = "<group>"; };
+		14F4A12C2AD753C4000C6EC6 /* ChartLegendPositionPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLegendPositionPicker.swift; sourceTree = "<group>"; };
 		14FA170A2AD60484009505B1 /* ToyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyShape.swift; sourceTree = "<group>"; };
 		14FA170C2AD6050E009505B1 /* BarChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +93,8 @@
 				146335A52AD619CC00F9A8D9 /* PieChartsView.swift */,
 				146335AB2AD63BED00F9A8D9 /* DonutChartView.swift */,
 				146335B02AD6CBCA00F9A8D9 /* PieChartView.swift */,
+				14F4A12A2AD75334000C6EC6 /* ChartLegendAlignmentPicker.swift */,
+				14F4A12C2AD753C4000C6EC6 /* ChartLegendPositionPicker.swift */,
 			);
 			path = SwiftCharts;
 			sourceTree = "<group>";
@@ -208,6 +214,8 @@
 			files = (
 				146335B12AD6CBCA00F9A8D9 /* PieChartView.swift in Sources */,
 				14D247452AD4C3AF00B048DB /* ContentView.swift in Sources */,
+				14F4A12D2AD753C4000C6EC6 /* ChartLegendPositionPicker.swift in Sources */,
+				14F4A12B2AD75334000C6EC6 /* ChartLegendAlignmentPicker.swift in Sources */,
 				146335A82AD61D0C00F9A8D9 /* Pancake.swift in Sources */,
 				146335AC2AD63BED00F9A8D9 /* DonutChartView.swift in Sources */,
 				14D247592AD4DC3500B048DB /* WeatherDataView.swift in Sources */,
