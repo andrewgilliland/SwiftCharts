@@ -2,6 +2,12 @@ import SwiftUI
 
 //  https://github.com/jordibruin/Swift-Charts-Examples
 
+// 1. barchart
+// 2. linechart
+// 3. areachart
+// 4. scatterplot
+// 5. heat map
+// 6. pie chart
 
 struct ContentView: View {
     var body: some View {
@@ -13,6 +19,10 @@ struct ContentView: View {
                             Section(header: Text("Chart by Type")) {
                                 NavigationLink("Bar Charts") {
                                     BarChartsView()
+                                }
+                                
+                                NavigationLink("Pie Charts") {
+                                    PieChartsView()
                                 }
                                 
                                 NavigationLink("Static Chart View") {
