@@ -8,6 +8,8 @@ struct ToyShape: Identifiable {
     static var defaultToyData: [ToyShape] = [
         .init(type: "Cube", count: 5),
         .init(type: "Sphere", count: 4),
+        .init(type: "Cone", count: 3),
+        .init(type: "Prism", count: 2),
         .init(type: "Pyramid", count: 4),
     ]
 }
