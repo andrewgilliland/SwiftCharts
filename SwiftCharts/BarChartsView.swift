@@ -16,11 +16,38 @@ struct BarChartsView: View {
                     .foregroundStyle(.gray.opacity(0.35))
                     .zIndex(-10)
                     .offset(yStart: -10)
+                    .annotation(
+                        position: .top,
+                        spacing: 0,
+                        overflowResolution: .init(x: .disabled, y: .disabled)
+                    ) {
+//                        if let count = shapes
+                        ChartPopOverView(10)
+                    }
             }
         }
         .chartXSelection(value: $barSelection)
         .aspectRatio(1, contentMode: .fit)
         .padding()
+    }
+
+    @ViewBuilder
+    func ChartPopOverView(_ count: Double) -> some View {
+        
+        VStack(alignment: .leading, spacing: 6) {
+            Text("Total Count")
+                .padding(.top)
+                .padding(.horizontal)
+
+            HStack {
+                Text("\(count)")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+            }
+            .padding()
+        }
+        .background(.gray)
+        .cornerRadius(8)
     }
 }
 
