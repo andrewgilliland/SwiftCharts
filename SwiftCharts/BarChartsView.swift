@@ -3,37 +3,51 @@ import SwiftUI
 
 struct BarChartsView: View {
     @State private var barSelection: String?
+    @State private var year: Int = 2022
 
     var body: some View {
-        Chart {
-            ForEach(ToyShape.defaultToyData) { shape in
-                BarMark(x: .value("Shape Type", shape.type), y: .value("Total Count", shape.count))
-                    .foregroundStyle(by: .value("Shape Type", shape.type))
-            }
+        VStack {
+            Picker("", selection: $year) {
+                Text("Unsorted")
+                    .tag(2022)
 
-            if let barSelection {
-                RuleMark(x: .value("Shape Type", barSelection))
-                    .foregroundStyle(.gray.opacity(0.35))
-                    .zIndex(-10)
-                    .offset(yStart: -10)
-                    .annotation(
-                        position: .top,
-                        spacing: 0,
-                        overflowResolution: .init(x: .disabled, y: .disabled)
-                    ) {
-//                        if let count = shapes
-                        ChartPopOverView(10)
-                    }
+                Text("Sorted")
+                    .tag(2023)
             }
+            .pickerStyle(.segmented)
+            .labelsHidden()
+            .padding()
+
+            Chart {
+                ForEach(year == 2022 ? AppDownload.defaultAppDownloadsTwentyThree : AppDownload.defaultAppDownloadsTwentyThree.sorted(by: { $0.downloads > $1.downloads })) { appDownload in
+                    BarMark(x: .value("Month", appDownload.month), y: .value("Downloads", appDownload.downloads))
+                        .foregroundStyle(by: .value("Month", appDownload.month))
+                }
+
+                if let barSelection {
+                    RuleMark(x: .value("Shape Type", barSelection))
+                        .foregroundStyle(.gray.opacity(0.35))
+                        .zIndex(-10)
+                        .offset(yStart: -10)
+                        .annotation(
+                            position: .top,
+                            spacing: 0,
+                            overflowResolution: .init(x: .fit, y: .disabled)
+                        ) {
+                            //                        if let count = shapes
+                            ChartPopOverView(10)
+                        }
+                }
+            }
+            .chartXSelection(value: $barSelection)
+            .aspectRatio(1, contentMode: .fit)
+            .padding()
+            .animation(.bouncy, value: year)
         }
-        .chartXSelection(value: $barSelection)
-        .aspectRatio(1, contentMode: .fit)
-        .padding()
     }
 
     @ViewBuilder
-    func ChartPopOverView(_ count: Double) -> some View {
-        
+    func ChartPopOverView(_ count: Int) -> some View {
         VStack(alignment: .leading, spacing: 6) {
             Text("Total Count")
                 .padding(.top)

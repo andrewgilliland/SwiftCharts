@@ -2,7 +2,7 @@ import Foundation
 
 struct ToyShape: Identifiable {
     var type: String
-    var count: Double
+    var count: Int
     var id = UUID()
 
     static var defaultToyData: [ToyShape] = [

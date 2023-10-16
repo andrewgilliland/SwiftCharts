@@ -24,6 +24,7 @@
 		14F4A1292AD75283000C6EC6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4A1282AD75283000C6EC6 /* Extensions.swift */; };
 		14F4A12B2AD75334000C6EC6 /* ChartLegendAlignmentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4A12A2AD75334000C6EC6 /* ChartLegendAlignmentPicker.swift */; };
 		14F4A12D2AD753C4000C6EC6 /* ChartLegendPositionPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4A12C2AD753C4000C6EC6 /* ChartLegendPositionPicker.swift */; };
+		14F4A12F2ADD66ED000C6EC6 /* AppDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F4A12E2ADD66ED000C6EC6 /* AppDownload.swift */; };
 		14FA170B2AD60484009505B1 /* ToyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FA170A2AD60484009505B1 /* ToyShape.swift */; };
 		14FA170D2AD6050E009505B1 /* BarChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14FA170C2AD6050E009505B1 /* BarChartsView.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		14F4A1282AD75283000C6EC6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		14F4A12A2AD75334000C6EC6 /* ChartLegendAlignmentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLegendAlignmentPicker.swift; sourceTree = "<group>"; };
 		14F4A12C2AD753C4000C6EC6 /* ChartLegendPositionPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLegendPositionPicker.swift; sourceTree = "<group>"; };
+		14F4A12E2ADD66ED000C6EC6 /* AppDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDownload.swift; sourceTree = "<group>"; };
 		14FA170A2AD60484009505B1 /* ToyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyShape.swift; sourceTree = "<group>"; };
 		14FA170C2AD6050E009505B1 /* BarChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 				146335A72AD61D0C00F9A8D9 /* Pancake.swift */,
 				146335AE2AD6CB4A00F9A8D9 /* GraphType.swift */,
 				14F4A1282AD75283000C6EC6 /* Extensions.swift */,
+				14F4A12E2ADD66ED000C6EC6 /* AppDownload.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				14F4A12D2AD753C4000C6EC6 /* ChartLegendPositionPicker.swift in Sources */,
 				14F4A12B2AD75334000C6EC6 /* ChartLegendAlignmentPicker.swift in Sources */,
 				146335A82AD61D0C00F9A8D9 /* Pancake.swift in Sources */,
+				14F4A12F2ADD66ED000C6EC6 /* AppDownload.swift in Sources */,
 				146335AC2AD63BED00F9A8D9 /* DonutChartView.swift in Sources */,
 				14D247592AD4DC3500B048DB /* WeatherDataView.swift in Sources */,
 				14D247552AD4D4E400B048DB /* Turtle.swift in Sources */,
