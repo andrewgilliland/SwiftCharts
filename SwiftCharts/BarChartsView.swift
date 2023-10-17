@@ -3,23 +3,23 @@ import SwiftUI
 
 struct BarChartsView: View {
     @State private var barSelection: String?
-    @State private var year: Int = 2022
+    @State private var sorted: Bool = false
 
     var body: some View {
         VStack {
-            Picker("", selection: $year) {
+            Picker("", selection: $sorted) {
                 Text("Unsorted")
-                    .tag(2022)
+                    .tag(false)
 
                 Text("Sorted")
-                    .tag(2023)
+                    .tag(true)
             }
             .pickerStyle(.segmented)
             .labelsHidden()
             .padding()
 
             Chart {
-                ForEach(year == 2022 ? AppDownload.defaultAppDownloadsTwentyThree : AppDownload.defaultAppDownloadsTwentyThree.sorted(by: { $0.downloads > $1.downloads })) { appDownload in
+                ForEach(sorted == true ? AppDownload.defaultAppDownloadsTwentyThree.sorted(by: { $0.downloads > $1.downloads }) : AppDownload.defaultAppDownloadsTwentyThree) { appDownload in
                     BarMark(x: .value("Month", appDownload.month), y: .value("Downloads", appDownload.downloads))
                         .foregroundStyle(by: .value("Month", appDownload.month))
                 }
@@ -42,7 +42,7 @@ struct BarChartsView: View {
             .chartXSelection(value: $barSelection)
             .aspectRatio(1, contentMode: .fit)
             .padding()
-            .animation(.bouncy, value: year)
+            .animation(.bouncy, value: sorted)
         }
     }
 
