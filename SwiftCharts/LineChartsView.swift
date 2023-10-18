@@ -9,6 +9,8 @@ struct LineChartsView: View {
                     .foregroundStyle(.purple)
             }
         }
+        .aspectRatio(1, contentMode: .fit)
+        .padding()
     }
 }
 
