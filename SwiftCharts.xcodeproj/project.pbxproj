@@ -13,6 +13,7 @@
 		146335AF2AD6CB4A00F9A8D9 /* GraphType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146335AE2AD6CB4A00F9A8D9 /* GraphType.swift */; };
 		146335B12AD6CBCA00F9A8D9 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146335B02AD6CBCA00F9A8D9 /* PieChartView.swift */; };
 		14A97D0C2ADF4B7B00DAD19C /* LineChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A97D0B2ADF4B7B00DAD19C /* LineChartsView.swift */; };
+		14A97D0E2AE012DA00DAD19C /* AreaChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A97D0D2AE012DA00DAD19C /* AreaChartsView.swift */; };
 		14D247432AD4C3AF00B048DB /* SwiftChartsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D247422AD4C3AF00B048DB /* SwiftChartsApp.swift */; };
 		14D247452AD4C3AF00B048DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D247442AD4C3AF00B048DB /* ContentView.swift */; };
 		14D247472AD4C3B000B048DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D247462AD4C3B000B048DB /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		146335AE2AD6CB4A00F9A8D9 /* GraphType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphType.swift; sourceTree = "<group>"; };
 		146335B02AD6CBCA00F9A8D9 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		14A97D0B2ADF4B7B00DAD19C /* LineChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartsView.swift; sourceTree = "<group>"; };
+		14A97D0D2AE012DA00DAD19C /* AreaChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaChartsView.swift; sourceTree = "<group>"; };
 		14D2473F2AD4C3AF00B048DB /* SwiftCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14D247422AD4C3AF00B048DB /* SwiftChartsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChartsApp.swift; sourceTree = "<group>"; };
 		14D247442AD4C3AF00B048DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				14F4A12A2AD75334000C6EC6 /* ChartLegendAlignmentPicker.swift */,
 				14F4A12C2AD753C4000C6EC6 /* ChartLegendPositionPicker.swift */,
 				14A97D0B2ADF4B7B00DAD19C /* LineChartsView.swift */,
+				14A97D0D2AE012DA00DAD19C /* AreaChartsView.swift */,
 			);
 			path = SwiftCharts;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				14D247452AD4C3AF00B048DB /* ContentView.swift in Sources */,
 				14F4A12D2AD753C4000C6EC6 /* ChartLegendPositionPicker.swift in Sources */,
 				14F4A12B2AD75334000C6EC6 /* ChartLegendAlignmentPicker.swift in Sources */,
+				14A97D0E2AE012DA00DAD19C /* AreaChartsView.swift in Sources */,
 				146335A82AD61D0C00F9A8D9 /* Pancake.swift in Sources */,
 				14F4A12F2ADD66ED000C6EC6 /* AppDownload.swift in Sources */,
 				146335AC2AD63BED00F9A8D9 /* DonutChartView.swift in Sources */,

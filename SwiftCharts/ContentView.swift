@@ -22,6 +22,14 @@ struct ContentView: View {
                             BarChartsView()
                         }
 
+                        NavigationLink("Line Charts") {
+                            LineChartsView()
+                        }
+
+                        NavigationLink("Area Charts") {
+                            AreaChartsView()
+                        }
+
                         NavigationLink("Pie Charts") {
                             PieChartsView()
                         }
@@ -39,14 +47,6 @@ struct ContentView: View {
 //                                }
                     }
                 }
-
-//                        List {
-//                            Section(header: Text("Charts by Style")) {
-//                                                        Text("Item A")
-//                                                        Text("Item B")
-//                                                        Text("Item C")
-//                                                    }
-//                        }
             }
             .navigationTitle("Swift Charts")
         }
