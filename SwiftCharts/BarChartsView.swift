@@ -21,7 +21,7 @@ struct BarChartsView: View {
             Chart {
                 ForEach(sorted == true ? AppDownload.defaultAppDownloadsTwentyThree.sorted(by: { $0.downloads > $1.downloads }) : AppDownload.defaultAppDownloadsTwentyThree) { appDownload in
                     BarMark(x: .value("Month", appDownload.month), y: .value("Downloads", appDownload.downloads))
-                        .foregroundStyle(by: .value("Month", appDownload.month))
+                        .foregroundStyle(by: .value("Downloads", appDownload.downloads))
                 }
 
                 if let barSelection {
@@ -39,6 +39,7 @@ struct BarChartsView: View {
                         }
                 }
             }
+            .chartLegend(position: .bottom)
             .chartXSelection(value: $barSelection)
             .aspectRatio(1, contentMode: .fit)
             .padding()

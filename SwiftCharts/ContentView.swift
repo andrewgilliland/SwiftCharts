@@ -4,6 +4,7 @@ import SwiftUI
 
 // https://www.youtube.com/watch?v=nu74-aRobSs - SwiftUI Interactive Charts - Pie/Donut Charts - iOS 17 - WWDC 2023
 // https://developer.apple.com/videos/play/wwdc2023/10037/ ios 17
+// https://nilcoalescing.com/blog/BuildAndStyleAChartWithSwiftChartsFramework/
 
 // 1. barchart
 // 2. linechart
